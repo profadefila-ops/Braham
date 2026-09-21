@@ -20,6 +20,7 @@ import { BlogPage } from './components/BlogPage';
 import { BlogPostPage } from './components/BlogPostPage';
 import { ProjectModal } from './components/ProjectModal';
 import { BookCallModal } from './components/BookCallModal';
+import { Preloader } from './components/Preloader';
 import { ServiceItem, Project } from './types';
 
 type PageRoute =
@@ -44,14 +45,14 @@ const HASH_TO_PAGE: Record<string, PageRoute> = {
 };
 
 const SECTION_TO_PAGE: Partial<Record<string, PageRoute>> = {
-  'home': 'home',
-  'about': 'about',
-  'projects': 'projects',
-  'work': 'projects',
-  'contact': 'contact',
-  'services': 'services',
-  'blog': 'blog',
-  'journal': 'blog',
+  home: 'home',
+  about: 'about',
+  projects: 'projects',
+  work: 'projects',
+  contact: 'contact',
+  services: 'services',
+  blog: 'blog',
+  journal: 'blog',
 };
 
 export default function App() {
@@ -61,6 +62,21 @@ export default function App() {
   const [selectedServiceForCall, setSelectedServiceForCall] = useState<string>('');
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const [blogSlug, setBlogSlug] = useState<string>('');
+
+  // Preloader state — plays once on first mount of App
+  const [isPreloading, setIsPreloading] = useState(true);
+
+  // Lock body scroll while preloader is visible
+  useEffect(() => {
+    if (isPreloading) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isPreloading]);
 
   // Sync hash routing on load + on hashchange
   useEffect(() => {
@@ -174,7 +190,6 @@ export default function App() {
     scrollToSection(sectionId);
   };
 
-  // Blog post navigation
   const handleOpenPost = (slug: string) => {
     setBlogSlug(slug);
     setCurrentPage('blog-post');
@@ -209,12 +224,19 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#F9F9F8] text-[#0D0D0D] selection:bg-black selection:text-white font-sans flex flex-col relative">
+      {/* Preloader — plays once on first mount */}
+      {isPreloading && (
+        <Preloader onComplete={() => setIsPreloading(false)} />
+      )}
+
+      {/* Top Sticky Header */}
       <Navbar
         onBookCallClick={() => handleBookCallClick()}
         onNavigate={handleNavigate}
         activeSection={activeSection}
       />
 
+      {/* Main Page Flow */}
       <main className="flex-grow">
         {currentPage === 'about' ? (
           <AboutPage
@@ -298,17 +320,20 @@ export default function App() {
         )}
       </main>
 
+      {/* Footer — always visible */}
       <Footer
         onBookCallClick={() => handleBookCallClick()}
         onNavigate={handleNavigate}
       />
 
+      {/* Case study modal */}
       <ProjectModal
         project={activeProject}
         onClose={() => setActiveProject(null)}
         onBookCall={(title) => handleBookCallClick(title)}
       />
 
+      {/* Booking modal */}
       <BookCallModal
         isOpen={isBookCallOpen}
         onClose={() => setIsBookCallOpen(false)}
