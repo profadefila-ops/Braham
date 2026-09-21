@@ -103,17 +103,17 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>OPEN FOR WORK</span>
             </div>
 
-            {/* Start a Project CTA */}
+            {/* Start a Project CTA — teal #6be3e8 with black text */}
             <Magnetic strength={0.15}>
               <button
                 id="book-call-cta-btn"
                 onClick={onBookCallClick}
-                className="group relative inline-flex items-center gap-2 bg-[#111110] hover:bg-black text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium tracking-tight shadow-sm hover:shadow-md transition-all duration-200 active:scale-95 cursor-pointer"
+                className="group relative inline-flex items-center gap-2 bg-[#6be3e8] hover:bg-[#48d2d7] text-black px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium tracking-tight shadow-sm hover:shadow-md transition-all duration-200 active:scale-95 cursor-pointer"
               >
                 <span className="whitespace-nowrap font-medium">
                   Start a Project
                 </span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-white/70 group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-black/70 group-hover:text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </button>
             </Magnetic>
 

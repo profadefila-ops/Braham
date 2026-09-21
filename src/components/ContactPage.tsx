@@ -98,12 +98,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
   const teamImages = [
     {
-      src: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1400&auto=format&fit=crop&q=80',
+      src: 'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/per.webp',
       tag: 'PRODUCT',
       caption: 'Product Team / 2026',
     },
     {
-      src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&auto=format&fit=crop&q=80',
+      src: 'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/team.webp',
       tag: 'SUPPORT',
       caption: 'Call Center Team / 2026',
     },
@@ -223,8 +223,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 rounded-full overflow-hidden bg-neutral-200 border border-black/[0.06] shrink-0">
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format&fit=crop&q=80"
-                    alt="Sarah Jenkins"
+                    src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/Fuzzly%20Blog.webp"
+                    alt="Fuzzly"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                     loading="lazy"
@@ -232,10 +232,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                 </div>
                 <div>
                   <div className="text-base font-semibold font-sans text-[#0D0D0D] tracking-tight">
-                    Sarah Jenkins
+                    Fuzzly
                   </div>
                   <div className="text-[11px] font-mono text-[#737370] tracking-wide mt-0.5">
-                    Founder &amp; CEO @ SYLVEN
+                    Braham's &amp; Mascot
                   </div>
                 </div>
               </div>
@@ -256,7 +256,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   </span>
                 </div>
                 <p className="text-sm text-[#4A4A48] font-sans leading-relaxed">
-                  49th St, Australia Melbourne, 90011
+                  Lagos, Nigeria
                 </p>
               </div>
 
@@ -272,7 +272,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   className="group inline-flex items-center gap-2 text-sm text-[#0D0D0D] font-sans hover:text-black transition-colors cursor-pointer"
                 >
                   <span className="underline underline-offset-4 decoration-black/30 group-hover:decoration-black transition-colors">
-                    hey@sylven.com
+                    contact@braham.com
                   </span>
                   {emailCopied ? (
                     <CheckIcon className="w-3.5 h-3.5 text-[#10B981]" />
@@ -391,7 +391,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                           href="mailto:hey@sylven.com"
                           className="text-[#0D0D0D] underline underline-offset-4 decoration-black/30 hover:decoration-black transition-colors"
                         >
-                          HEY@SYLVEN.COM
+                          contact@braham.com
                         </a>
                       </span>
                     </div>
