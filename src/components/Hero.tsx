@@ -214,7 +214,7 @@ export const Hero: React.FC<HeroProps> = ({ onServiceSelect }) => {
                       <span
                         className={`text-xs font-mono transition-colors ${
                           isSelected
-                            ? 'text-[#8CE196]'
+                            ? 'text-[#6be3e8]'
                             : 'text-[#888884] group-hover:text-black'
                         }`}
                       >

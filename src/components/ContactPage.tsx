@@ -88,7 +88,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
   const handleCopyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('hey@sylven.com');
+      await navigator.clipboard.writeText('contact@braham.com');
       setEmailCopied(true);
       setTimeout(() => setEmailCopied(false), 1800);
     } catch {
@@ -117,13 +117,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.4 }}
-      className="w-full bg-[#F9F9F8] text-[#0D0D0D] font-sans pt-24 sm:pt-28 pb-16"
+      className="w-full bg-[#F9F9F8] text-[#0D0D0D] font-sans pt-24 sm:pt-28 pb-16 overflow-x-hidden"
     >
-      {/* 
-        ========================================================================
-        HEADER ROW — [01] / /CONTACT / GET IN TOUCH + HAIRLINE RULE
-        ========================================================================
-      */}
+      {/* HEADER ROW */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-10 sm:pb-14">
         <div className="flex items-center justify-between gap-4 text-[11px] sm:text-xs font-mono uppercase tracking-[0.2em] text-[#8E8E89] pb-4 border-b border-black/[0.10]">
           <span>[01]</span>
@@ -132,13 +128,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({
         </div>
       </section>
 
-      {/* 
-        ========================================================================
-        HERO — MONUMENTAL "CONTACT US." + DUAL AMBIENT GLOW
-        ========================================================================
-      */}
-      <section className="relative px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-16 sm:pb-24">
-        {/* Ambient Lime/Cyan Glow — top-right (matches reference) */}
+      {/* HERO */}
+      <section className="relative px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-16 sm:pb-24 overflow-hidden">
+        {/* Ambient Lime/Cyan Glow — top-right */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -top-24 right-0 w-full max-w-[1200px] h-[600px] bg-[radial-gradient(ellipse_70%_60%_at_75%_10%,rgba(180,240,120,0.35)_0%,rgba(92,225,230,0.18)_35%,rgba(249,249,248,0)_75%)] blur-3xl z-0"
@@ -200,11 +192,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
           </div>
         </div>
 
-        {/* 
-          ======================================================================
-          MAIN GRID — Left editorial info · Right elevated form
-          ======================================================================
-        */}
+        {/* MAIN GRID */}
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           {/* LEFT — founder chip + address + contact mini-grid */}
           <div className="lg:col-span-5 space-y-8">
@@ -235,7 +223,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                     Fuzzly
                   </div>
                   <div className="text-[11px] font-mono text-[#737370] tracking-wide mt-0.5">
-                    Braham's &amp; Mascot
+                    Braham&apos;s Mascot
                   </div>
                 </div>
               </div>
@@ -388,7 +376,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       <span className="text-[11px] font-mono text-[#8E8E89]">
                         OR EMAIL DIRECTLY —{' '}
                         <a
-                          href="mailto:hey@sylven.com"
+                          href="mailto:contact@braham.com"
                           className="text-[#0D0D0D] underline underline-offset-4 decoration-black/30 hover:decoration-black transition-colors"
                         >
                           contact@braham.com
@@ -470,11 +458,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
         </div>
       </section>
 
-      {/* 
-        ========================================================================
-        TEAM IMAGES — two side-by-side with mono overlay tags + hover zoom
-        ========================================================================
-      */}
+      {/* TEAM IMAGES */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-10 sm:pt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {teamImages.map((img, idx) => (
@@ -499,18 +483,15 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   loading="lazy"
                 />
 
-                {/* Mono tag overlay top-left */}
                 <div className="absolute top-4 left-4">
                   <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/75 backdrop-blur-xs text-white text-[10px] font-mono uppercase tracking-widest">
                     [TEAM] // {img.tag}
                   </span>
                 </div>
 
-                {/* Bottom gradient fade */}
                 <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
-              {/* Caption row */}
               <div className="mt-3 flex items-center justify-between gap-4">
                 <span className="text-xs sm:text-sm font-sans text-[#0D0D0D] tracking-tight">
                   {img.caption}
@@ -524,11 +505,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
         </div>
       </section>
 
-      {/* 
-        ========================================================================
-        CTA BANNER — same treatment as About / Projects / Services
-        ========================================================================
-      */}
+      {/* CTA BANNER */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28">
         <div className="relative rounded-3xl bg-[#0D0D0D] text-white p-8 sm:p-14 lg:p-20 overflow-hidden shadow-2xl">
           <div
@@ -571,11 +548,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
   );
 };
 
-/* 
-  ==========================================================================
-  FLOATING FIELD — modern editorial input with animated label + underline
-  ==========================================================================
-*/
+/* FLOATING FIELD — modern editorial input with animated label + underline */
 interface FloatingFieldProps {
   id: string;
   name: keyof FormState;
@@ -612,7 +585,6 @@ const FloatingField: React.FC<FloatingFieldProps> = ({
 
   return (
     <div className="relative">
-      {/* Label + number */}
       <label
         htmlFor={id}
         className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-[0.2em] mb-3"
@@ -651,9 +623,7 @@ const FloatingField: React.FC<FloatingFieldProps> = ({
         />
       )}
 
-      {/* Baseline rule */}
       <div className="relative h-[1px] w-full bg-black/[0.12]">
-        {/* Animated fill underline — grows from left on focus */}
         <motion.div
           initial={false}
           animate={{ scaleX: active ? 1 : 0 }}
