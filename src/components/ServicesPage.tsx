@@ -50,7 +50,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         'Responsive Editorial Grids',
       ],
       image:
-        'https://images.unsplash.com/photo-1547658719-da2b51169166?w=1400&auto=format&fit=crop&q=80',
+        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/bui.webp',
     },
     {
       index: '02',
@@ -65,7 +65,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         'Accessibility Audits (WCAG 2.2)',
       ],
       image:
-        'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1400&auto=format&fit=crop&q=80',
+        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/fit.webp',
     },
     {
       index: '03',
@@ -80,7 +80,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         'Sub-Second Load Performance',
       ],
       image:
-        'https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?w=1400&auto=format&fit=crop&q=80',
+        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/ag.webp',
     },
     {
       index: '04',
@@ -95,7 +95,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         'Campaign Conceptualisation',
       ],
       image:
-        'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1400&auto=format&fit=crop&q=80',
+        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/ai.webp',
     },
   ];
 

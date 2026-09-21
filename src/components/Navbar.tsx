@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { Magnetic } from './motion/Magnetic';
 
@@ -25,21 +25,10 @@ export const Navbar: React.FC<NavbarProps> = ({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  /**
-   * Nav order matches the reference layout.
-   * `id` values are the single source of truth passed to App.handleNavigate:
-   *   - 'projects'    → full Projects page
-   *   - 'services'    → full Services page
-   *   - 'methodology' → homepage scroll target (Approach)
-   *   - 'about'       → full About page
-   *   - 'blog'        → full Blog / Journal page
-   *   - 'contact'     → full Contact page
-   */
   const navLinks = [
     { name: 'About', id: 'about', code: '04' },
     { name: 'Work', id: 'projects', code: '01' },
     { name: 'Services', id: 'services', code: '02' },
-    // { name: 'Approach', id: 'methodology', code: '03' },
     { name: 'Blog', id: 'blog', code: '05' },
     { name: 'Contact', id: 'contact', code: '06' },
   ];
@@ -73,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             />
           </button>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation */}
           <nav
             id="desktop-nav"
             className="hidden lg:flex items-center gap-6 xl:gap-8"
@@ -85,27 +74,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                   key={link.id}
                   id={`nav-link-${link.id}`}
                   onClick={() => onNavigate(link.id)}
-                  className={`text-sm tracking-tight transition-colors duration-200 flex items-baseline gap-1 py-1 cursor-pointer font-sans relative group ${
+                  className={`text-sm tracking-tight transition-colors duration-200 flex items-baseline gap-1 py-1 cursor-pointer font-sans group ${
                     isActive
                       ? 'text-black font-semibold'
                       : 'text-[#4A4A48] hover:text-black'
                   }`}
                 >
-                  <span className="relative z-10">{link.name}</span>
+                  <span>{link.name}</span>
                   <span className="text-[10px] font-mono text-[#8C8C88] group-hover:text-black transition-colors">
                     {link.code}
                   </span>
-                  {isActive && (
-                    <motion.span
-                      layoutId="activeNavIndicator"
-                      className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-black"
-                      transition={{
-                        type: 'spring',
-                        stiffness: 380,
-                        damping: 30,
-                      }}
-                    />
-                  )}
                 </button>
               );
             })}
@@ -125,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>OPEN FOR WORK</span>
             </div>
 
-            {/* Start a Project CTA with magnetic pull */}
+            {/* Start a Project CTA */}
             <Magnetic strength={0.15}>
               <button
                 id="book-call-cta-btn"
@@ -139,7 +117,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </button>
             </Magnetic>
 
-            {/* Mobile / Tablet Menu Toggle */}
+            {/* Mobile Menu Toggle */}
             <button
               id="mobile-menu-toggle-btn"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -157,63 +135,59 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* Mobile Menu Drawer */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div
-            id="mobile-menu-drawer"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="lg:hidden bg-[#F9F9F8] border-b border-black/[0.08] px-4 pt-2 pb-6 shadow-xl"
-          >
-            <div className="flex flex-col space-y-3 pt-2">
-              {navLinks.map((link) => (
-                <button
-                  key={link.id}
-                  id={`mobile-nav-${link.id}`}
-                  onClick={() => {
-                    onNavigate(link.id);
-                    setMobileMenuOpen(false);
-                  }}
-                  className={`flex items-center justify-between py-2 text-base font-medium transition-colors ${
-                    activeSection === link.id
-                      ? 'text-black font-semibold'
-                      : 'text-[#555552]'
-                  }`}
-                >
-                  <span>{link.name}</span>
-                  <span className="text-xs font-mono text-[#8C8C88]">
-                    {link.code}
-                  </span>
-                </button>
-              ))}
+      <div
+        id="mobile-menu-drawer"
+        className={`lg:hidden bg-[#F9F9F8] border-b border-black/[0.08] px-4 shadow-xl overflow-hidden transition-all duration-200 ease-out origin-top ${
+          mobileMenuOpen
+            ? 'max-h-[500px] opacity-100 translate-y-0'
+            : 'max-h-0 opacity-0 -translate-y-2 pointer-events-none'
+        }`}
+      >
+        <div className="flex flex-col space-y-3 pt-4 pb-6">
+          {navLinks.map((link) => (
+            <button
+              key={link.id}
+              id={`mobile-nav-${link.id}`}
+              onClick={() => {
+                onNavigate(link.id);
+                setMobileMenuOpen(false);
+              }}
+              className={`flex items-center justify-between py-2 text-base font-medium transition-colors ${
+                activeSection === link.id
+                  ? 'text-black font-semibold'
+                  : 'text-[#555552]'
+              }`}
+            >
+              <span>{link.name}</span>
+              <span className="text-xs font-mono text-[#8C8C88]">
+                {link.code}
+              </span>
+            </button>
+          ))}
 
-              <div className="pt-4 border-t border-black/[0.08] flex items-center justify-between">
-                <button
-                  onClick={() => {
-                    onNavigate('home');
-                    setMobileMenuOpen(false);
-                  }}
-                  className="flex items-center text-left"
-                  aria-label="BRAHAM Home"
-                >
-                  <img
-                    src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
-                    alt="BRAHAM - A Findar Company"
-                    className="h-7 w-auto object-contain"
-                    referrerPolicy="no-referrer"
-                  />
-                </button>
-                <span className="inline-flex items-center gap-1 text-xs font-mono text-[#10B981]">
-                  <span className="w-2 h-2 rounded-full bg-[#10B981]" /> OPEN
-                  FOR WORK
-                </span>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          <div className="pt-4 border-t border-black/[0.08] flex items-center justify-between">
+            <button
+              onClick={() => {
+                onNavigate('home');
+                setMobileMenuOpen(false);
+              }}
+              className="flex items-center text-left"
+              aria-label="BRAHAM Home"
+            >
+              <img
+                src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
+                alt="BRAHAM - A Findar Company"
+                className="h-7 w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
+            </button>
+            <span className="inline-flex items-center gap-1 text-xs font-mono text-[#10B981]">
+              <span className="w-2 h-2 rounded-full bg-[#10B981]" /> OPEN FOR
+              WORK
+            </span>
+          </div>
+        </div>
+      </div>
     </motion.header>
   );
 };
