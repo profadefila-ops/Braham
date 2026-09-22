@@ -94,10 +94,10 @@ export const ImpactStatement: React.FC<ImpactStatementProps> = () => {
           <div className="impact-monogram lg:col-span-4 flex flex-col justify-between">
             <div>
               <div className="text-[18vw] sm:text-[12vw] lg:text-[6.5rem] font-black tracking-[-0.06em] text-[#0A0A0A] leading-none font-sans select-none">
-                B/
+                B
               </div>
               <div className="text-sm font-mono font-bold tracking-tight mt-3 text-[#4A4A46] uppercase">
-                STUDIO PHILOSOPHY
+                OUR PHILOSOPHY
               </div>
             </div>
 

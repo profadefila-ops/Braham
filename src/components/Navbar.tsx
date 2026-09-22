@@ -74,16 +74,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                   key={link.id}
                   id={`nav-link-${link.id}`}
                   onClick={() => onNavigate(link.id)}
-                  className={`text-sm tracking-tight transition-colors duration-200 flex items-baseline gap-1 py-1 cursor-pointer font-sans group ${
+                  className={`text-sm tracking-tight transition-colors duration-200 py-1 cursor-pointer font-sans ${
                     isActive
                       ? 'text-black font-semibold'
                       : 'text-[#4A4A48] hover:text-black'
                   }`}
                 >
                   <span>{link.name}</span>
-                  <span className="text-[10px] font-mono text-[#8C8C88] group-hover:text-black transition-colors">
-                    {link.code}
-                  </span>
                 </button>
               );
             })}
@@ -103,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>OPEN FOR WORK</span>
             </div>
 
-            {/* Start a Project CTA — teal #6be3e8 with black text */}
+            {/* Start a Project CTA */}
             <Magnetic strength={0.15}>
               <button
                 id="book-call-cta-btn"
@@ -159,9 +156,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <span>{link.name}</span>
-              <span className="text-xs font-mono text-[#8C8C88]">
-                {link.code}
-              </span>
             </button>
           ))}
 

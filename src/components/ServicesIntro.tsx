@@ -59,7 +59,7 @@ export const ServicesIntro: React.FC<ServicesIntroProps> = ({ onServiceSelect })
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 flex flex-col">
           {/* Top Section Metadata Strip (Exact Video 00:00 - 00:02) */}
           <div className="pb-2 sm:pb-3 border-b border-black/[0.08] flex items-center justify-between text-xs sm:text-sm font-mono text-[#52524E] shrink-0">
-            <span className="font-bold text-black">[03]</span>
+            <span className="font-bold text-black"></span>
             <span className="tracking-widest uppercase">// CORE CAPABILITIES</span>
             <span className="font-bold text-black tracking-wider uppercase">SERVICES</span>
           </div>

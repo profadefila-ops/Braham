@@ -99,7 +99,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({ onStageC
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Metadata Strip */}
         <div className="pb-3 border-b border-black/[0.08] flex items-center justify-between text-xs sm:text-sm font-mono text-[#52524E] mb-10 sm:mb-14">
-          <span className="font-bold text-black">[05]</span>
+          <span className="font-bold text-black"></span>
           <span className="tracking-widest uppercase">// OUR METHODOLOGY</span>
           <span className="font-bold text-black tracking-wider uppercase">HOW WE WORK</span>
         </div>

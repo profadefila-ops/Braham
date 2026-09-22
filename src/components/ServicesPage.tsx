@@ -348,7 +348,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
       {/* HEADER STRIP */}
       <section className="svc-header px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-10 sm:pb-14">
         <div className="relative flex items-center justify-between gap-4 text-[11px] sm:text-xs font-mono uppercase tracking-[0.2em] text-[#8E8E89] pb-4">
-          <span className="svc-header-text">[01]</span>
+          <span className="svc-header-text"></span>
           <span className="svc-header-text hidden sm:inline">/ SERVICES</span>
           <span className="svc-header-text">WHAT WE DO</span>
           <span

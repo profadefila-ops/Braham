@@ -130,7 +130,7 @@ export const WorksSection: React.FC<WorksSectionProps> = ({ onProjectClick }) =>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Metadata Header */}
         <div className="pb-8 sm:pb-12 border-b border-black/[0.08] flex items-center justify-between text-xs sm:text-sm font-mono text-[#52524E]">
-          <span className="font-bold text-black">[02]</span>
+          <span className="font-bold text-black"></span>
           <span className="tracking-widest uppercase">// SELECTED WORK</span>
           <span className="font-bold text-black tracking-wider uppercase">
             PROJECTS

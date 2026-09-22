@@ -118,13 +118,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({
 
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 border border-black/[0.08] text-[11px] font-mono tracking-widest text-[#4A4A48] shadow-xs">
               <span className="w-2 h-2 rounded-full bg-[#5ce1e6]" />
-              <span>BRAHAM ATELIER // EST. 2013</span>
+              <span>BRAHAM ATELIER // EST. 2022</span>
             </div>
           </div>
 
           <div className="flex items-center gap-2 mb-4">
-            <span className="text-xs font-mono text-[#8E8E89] uppercase tracking-widest">[01] // ABOUT BRAHAM</span>
-            <span className="h-[1px] w-8 bg-black/20" />
+            <span className="text-xs font-mono text-[#8E8E89] uppercase tracking-widest">ABOUT BRAHAM</span>
             <span className="text-xs font-mono text-[#8E8E89] uppercase tracking-widest">DIGITAL ARCHITECTURE</span>
           </div>
 

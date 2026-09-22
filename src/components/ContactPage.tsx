@@ -122,7 +122,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
       {/* HEADER ROW */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-10 sm:pb-14">
         <div className="flex items-center justify-between gap-4 text-[11px] sm:text-xs font-mono uppercase tracking-[0.2em] text-[#8E8E89] pb-4 border-b border-black/[0.10]">
-          <span>[01]</span>
+          <span></span>
           <span className="hidden sm:inline">/ CONTACT</span>
           <span>GET IN TOUCH</span>
         </div>

@@ -66,7 +66,7 @@ export const ClientExperienceSection: React.FC<ClientExperienceSectionProps> = (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Metadata Strip */}
         <div className="pb-3 border-b border-black/[0.08] flex items-center justify-between text-xs sm:text-sm font-mono text-[#52524E] mb-10 sm:mb-14">
-          <span className="font-bold text-black">[06]</span>
+          <span className="font-bold text-black"></span>
           <span className="tracking-widest uppercase">// STUDIO STANDARDS</span>
           <span className="font-bold text-black tracking-wider uppercase">DIGITAL CRAFT</span>
         </div>
@@ -112,7 +112,7 @@ export const ClientExperienceSection: React.FC<ClientExperienceSectionProps> = (
                 PURPOSEFUL DESIGN. INTENTIONAL CODE. ZERO SHORTCUTS.
               </h3>
               <p className="text-xs sm:text-sm font-sans text-[#52524E] leading-relaxed mb-8">
-                Bespoke design systems, responsive performance, and thoughtful interactions — every website is engineered with care, purpose, and visual distinction.
+                Bespoke design systems, responsive performance, and thoughtful interactions every website is engineered with care, purpose, and visual distinction.
               </p>
             </div>
 
@@ -198,11 +198,11 @@ export const ClientExperienceSection: React.FC<ClientExperienceSectionProps> = (
               {/* Author Row */}
               <div className="flex items-center gap-3.5 pt-4 border-t border-black/[0.06]">
                 <div className="w-11 h-11 rounded-full overflow-hidden bg-black text-white flex items-center justify-center font-bold text-sm shrink-0">
-                  B/
+                  B
                 </div>
                 <div>
                   <h4 className="text-sm font-bold font-sans text-[#0A0A0A] tracking-tight uppercase">
-                    STUDIO PHILOSOPHY
+                    OUR PHILOSOPHY
                   </h4>
                   <p className="text-xs font-mono text-[#666] tracking-wide uppercase">
                     BRAHAM DIGITAL PRACTICE

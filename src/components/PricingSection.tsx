@@ -95,7 +95,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
         {/* Section Index Marker: [04] */}
         <div className="flex justify-center mb-3">
           <span className="text-xs sm:text-sm font-mono font-bold tracking-widest text-white/50 uppercase">
-            [04]
           </span>
         </div>
 

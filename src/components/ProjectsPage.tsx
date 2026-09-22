@@ -486,7 +486,7 @@ const ProjectsFAQ: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="pb-3 border-b border-black/[0.08] flex items-center justify-between text-xs sm:text-sm font-mono text-[#52524E] mb-12 sm:mb-16">
-          <span className="font-bold text-black">[07]</span>
+          <span className="font-bold text-black"></span>
           <span className="tracking-widest uppercase">// FAQ</span>
           <span className="font-bold text-black tracking-wider uppercase">
             GOT QUESTIONS?
