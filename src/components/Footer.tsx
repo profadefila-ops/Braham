@@ -35,6 +35,23 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
         }
       );
 
+      // Studio locations reveal
+      gsap.fromTo(
+        '.footer-locations-grid',
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.85,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.footer-locations-grid',
+            start: 'top 90%',
+            once: true,
+          },
+        }
+      );
+
       // Monumental logo marquee wrapper smooth reveal
       gsap.fromTo(
         '.footer-monumental-wrapper',
@@ -56,16 +73,30 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
     return () => ctx.revert();
   }, []);
 
+  const studioLocations = [
+    {
+      country: 'United Kingdom',
+      lines: ['2 Frederick Street', 'Kings Cross, London.', 'WC1X OND'],
+    },
+    {
+      country: 'United States',
+      lines: ['850 New Burton Road', 'Dover. Delaware.', '19904.'],
+      phone: null,
+    },
+    {
+      country: 'Nigeria',
+      lines: ['12k Nana Okuribido', 'Ismail Estate, Lagos'],
+      phone: null,
+    },
+  ];
+
   return (
     <footer
       ref={footerRef}
       id="contact"
       className="relative bg-[#0D0D0D] text-white pt-20 sm:pt-28 pb-10 sm:pb-12 overflow-hidden select-none"
     >
-      {/* 
-        SIGNATURE FOOTER RADIANT GRADIENT AURA
-        Luminous #5ce1e6 ambient glow rising up from the bottom behind BRAHAM STUDIO
-      */}
+      {/* SIGNATURE FOOTER RADIANT GRADIENT AURA */}
       <div
         className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[480px] sm:h-[580px] bg-[radial-gradient(ellipse_80%_60%_at_50%_100%,rgba(92,225,230,0.28)_0%,rgba(92,225,230,0.12)_35%,rgba(13,13,13,0)_75%)] blur-3xl z-0"
         aria-hidden="true"
@@ -76,11 +107,7 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* 
-          TOP ROW:
-          Left: LETS TALK / HELLO@BRAHAM.STUDIO
-          Right: 3 Columns of Links (Work/Services/Approach/About, Privacy/Terms, X/Instagram/Linkedin)
-        */}
+        {/* TOP ROW */}
         <div className="footer-top-grid grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-16 sm:pb-24 border-b border-white/[0.1]">
           {/* Left Column: Contact Details */}
           <div className="lg:col-span-6 flex flex-col justify-start">
@@ -90,12 +117,12 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
                 className="inline-block group cursor-pointer text-left focus:outline-none transition-opacity hover:opacity-85"
                 aria-label="BRAHAM Home"
               >
-               <img
-  src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
-  alt="BRAHAM - A Findar Company"
-  className="h-8 sm:h-9 w-auto max-h-9 object-contain"
-  referrerPolicy="no-referrer"
-/>
+                <img
+                  src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
+                  alt="BRAHAM - A Findar Company"
+                  className="h-8 sm:h-9 w-auto max-h-9 object-contain"
+                  referrerPolicy="no-referrer"
+                />
               </button>
             </div>
 
@@ -104,11 +131,11 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
             </span>
 
             <span className="text-xs sm:text-sm font-mono text-white/70 mb-4 tracking-wider uppercase">
-              (+91-447-7-454)
+              phone: +44 7466 735906
             </span>
 
             <a
-              href="mailto:hello@braham.studio"
+              href="mailto:support@braham.com"
               onClick={(e) => {
                 e.preventDefault();
                 onBookCallClick();
@@ -121,7 +148,6 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
 
           {/* Right Columns: 3 Navigation Link Columns */}
           <div className="lg:col-span-6 grid grid-cols-3 gap-6 sm:gap-10">
-            {/* Column 1: Navigation */}
             <div className="flex flex-col space-y-3 sm:space-y-4">
               <button
                 onClick={() => onNavigate('hero')}
@@ -149,7 +175,6 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
               </button>
             </div>
 
-            {/* Column 2: Legal / Info */}
             <div className="flex flex-col space-y-3 sm:space-y-4">
               <button
                 onClick={() => onNavigate('about')}
@@ -171,7 +196,6 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
               </span>
             </div>
 
-            {/* Column 3: Socials */}
             <div className="flex flex-col space-y-3 sm:space-y-4">
               <a
                 href="https://x.com"
@@ -202,10 +226,62 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
         </div>
 
         {/* 
-          MONUMENTAL CONTINUOUS MARQUEE HEADING
-          BRAHAM AGENCY®
-          — Speed reduced via inline animationDuration override (60s per loop)
+          STUDIO LOCATIONS — 3-column editorial grid
+          United Kingdom · United States · Nigeria
         */}
+        <div className="footer-locations-grid pt-12 sm:pt-16 pb-16 sm:pb-20 border-b border-white/[0.1]">
+          {/* Section eyebrow */}
+          <div className="flex items-center justify-between mb-8 sm:mb-10 text-xs font-mono uppercase tracking-widest text-white/50">
+            <span className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-[#5ce1e6]" />
+              STUDIO LOCATIONS
+            </span>
+            <span className="hidden sm:inline">// GLOBAL PRESENCE</span>
+          </div>
+
+          {/* 3-column grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 lg:gap-12">
+            {studioLocations.map((loc, idx) => (
+              <div
+                key={loc.country}
+                className={`flex flex-col ${
+                  idx > 0
+                    ? 'sm:border-l sm:border-white/[0.1] sm:pl-6 lg:pl-8'
+                    : ''
+                }`}
+              >
+                {/* Country */}
+                <span className="text-base sm:text-lg font-bold font-sans text-white tracking-tight uppercase mb-3">
+                  {loc.country}
+                </span>
+
+                {/* Address lines */}
+                <div className="space-y-0.5 mb-4">
+                  {loc.lines.map((line, lIdx) => (
+                    <p
+                      key={lIdx}
+                      className="text-sm font-sans text-white/70 leading-relaxed"
+                    >
+                      {line}
+                    </p>
+                  ))}
+                </div>
+
+                {/* Phone — only if provided */}
+                {loc.phone && (
+                  <a
+                    href={`tel:${loc.phone.replace(/\s+/g, '')}`}
+                    className="text-xs font-mono text-[#5ce1e6] hover:text-white transition-colors tracking-wider w-fit"
+                  >
+                    {loc.phone}
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* MONUMENTAL CONTINUOUS MARQUEE HEADING */}
         <div className="footer-monumental-wrapper py-10 sm:py-16 md:py-20 flex items-center overflow-hidden w-full relative">
           <div
             className="animate-marquee-constant whitespace-nowrap flex items-center"
@@ -229,7 +305,7 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
               ))}
             </div>
 
-            {/* Track 2 (exact duplicate for seamless infinite loop) */}
+            {/* Track 2 */}
             <div className="flex items-center shrink-0" aria-hidden="true">
               {[...Array(3)].map((_, i) => (
                 <span
@@ -249,17 +325,15 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
           </div>
         </div>
 
-        {/* 
-          BOTTOM CREDITS BAR
-        */}
+        {/* BOTTOM CREDITS BAR */}
         <div className="pt-6 sm:pt-8 border-t border-white/[0.1] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-white/50">
           <div className="flex items-center gap-3 tracking-wider uppercase">
-        <img
-  src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
-  alt="BRAHAM Logo"
-  className="h-4 w-auto object-contain opacity-90"
-  referrerPolicy="no-referrer"
-/>
+            <img
+              src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
+              alt="BRAHAM Logo"
+              className="h-4 w-auto object-contain opacity-90"
+              referrerPolicy="no-referrer"
+            />
             <span className="text-white/30">|</span>
             <span className="text-white font-bold">DIGITAL AGENCY</span>
           </div>

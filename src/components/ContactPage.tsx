@@ -244,7 +244,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   </span>
                 </div>
                 <p className="text-sm text-[#4A4A48] font-sans leading-relaxed">
-                  Lagos, Nigeria
+                  Ismail Estate, Lagos
                 </p>
               </div>
 
@@ -260,7 +260,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   className="group inline-flex items-center gap-2 text-sm text-[#0D0D0D] font-sans hover:text-black transition-colors cursor-pointer"
                 >
                   <span className="underline underline-offset-4 decoration-black/30 group-hover:decoration-black transition-colors">
-                    contact@braham.com
+                    support@braham.com
                   </span>
                   {emailCopied ? (
                     <CheckIcon className="w-3.5 h-3.5 text-[#10B981]" />
@@ -379,7 +379,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                           href="mailto:contact@braham.com"
                           className="text-[#0D0D0D] underline underline-offset-4 decoration-black/30 hover:decoration-black transition-colors"
                         >
-                          contact@braham.com
+                          support@braham.com
                         </a>
                       </span>
                     </div>
