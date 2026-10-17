@@ -38,7 +38,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Introducing Braham: A Bold New Identity for a Bold Future',
     category: 'Business',
     image:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/neww1.webp',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Braham-Blog-Images.webp',
     readTime: '5 MIN READ',
     date: 'SEPTEMBER 2026',
     dateISO: '2026-09-21',
@@ -108,7 +108,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'We Were Hired Almost Too Late: Confessions from the Web Team',
     category: 'Business',
     image:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Blog-1_-Website.webp',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Blog-1_-Website.webp',
     readTime: '6 MIN READ',
     date: 'SEPTEMBER 2026',
     dateISO: '2026-09-14',
@@ -181,7 +181,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'What Your Logo Would Say If It Could Talk',
     category: 'Consultation',
     image:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Blog-3_-Logo.webp',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Blog-3_-Logo.webp',
     readTime: '5 MIN READ',
     date: 'SEPTEMBER 2026',
     dateISO: '2026-09-07',

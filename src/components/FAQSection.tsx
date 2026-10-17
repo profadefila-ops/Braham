@@ -108,9 +108,9 @@ export const FAQSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Model Photo + Narrative */}
           <div className="faq-left-col lg:col-span-5 flex flex-col">
-            <div className="w-full aspect-[4/4] rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-200 border border-black/[0.08] mb-6 shadow-sm group">
+            <div className="w-full aspect-[4/6] rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-200 border border-black/[0.08] mb-6 shadow-sm group">
               <img
-                src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/and.webp"
+                src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/90.webp"
                 alt="Braham FAQ Studio Vision"
                 className="w-full h-full object-cover filter contrast-105 group-hover:scale-104 transition-transform duration-700"
                 loading="lazy"

@@ -98,12 +98,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
   const teamImages = [
     {
-      src: 'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/per.webp',
+      src: 'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/44585.webp',
       tag: 'PRODUCT',
       caption: 'Product Team / 2026',
     },
     {
-      src: 'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/team.webp',
+      src: 'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/20295.webp',
       tag: 'SUPPORT',
       caption: 'Call Center Team / 2026',
     },
@@ -211,7 +211,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 rounded-full overflow-hidden bg-neutral-200 border border-black/[0.06] shrink-0">
                   <img
-                    src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/Fuzzly%20Blog.webp"
+                    src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Fuzzly-Blog.png"
                     alt="Fuzzly"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

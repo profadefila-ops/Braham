@@ -50,7 +50,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         'Responsive Editorial Grids',
       ],
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/bui.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/1-Instagram.jpeg',
     },
     {
       index: '02',
@@ -65,7 +65,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         'Accessibility Audits (WCAG 2.2)',
       ],
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/fit.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Minimal-Fashion-iPhone-Mockup-_-WANNATHIS_ONE.jpeg',
     },
     {
       index: '03',
@@ -80,7 +80,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         'Sub-Second Load Performance',
       ],
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/ag.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/bui.webp',
     },
     {
       index: '04',
@@ -95,7 +95,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         'Campaign Conceptualisation',
       ],
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/ai.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/ai.webp',
     },
   ];
 

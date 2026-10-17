@@ -119,7 +119,7 @@ export const BookCallModal: React.FC<BookCallModalProps> = ({
             <div className="flex items-center gap-3 sm:gap-4 min-w-0 flex-1">
               <div className="h-10 sm:h-11 px-2.5 sm:px-3 rounded-xl bg-white/70 border border-black/10 flex items-center justify-center shrink-0">
                 <img
-                  src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
+                  src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Braham-Logo.png"
                   alt="BRAHAM - A Findar Company"
                   className="h-5 sm:h-6 w-auto object-contain"
                   referrerPolicy="no-referrer"

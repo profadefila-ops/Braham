@@ -79,7 +79,7 @@ export const ServicesIntro: React.FC<ServicesIntroProps> = ({ onServiceSelect })
            <div className="lg:col-span-3 flex flex-col items-center lg:items-end justify-center">
   <div className="relative w-18 sm:w-24 lg:w-28 aspect-[3/4] flex items-center justify-center">
     <img
-      src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/4-removebg-preview.png"
+      src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/4-removebg-preview.png"
       alt="Sculpture Bust"
       className="w-full h-full object-contain select-none pointer-events-none drop-shadow-md"
       loading="lazy"

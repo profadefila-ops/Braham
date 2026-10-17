@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="flex items-center group cursor-pointer text-left transition-opacity hover:opacity-90 focus:outline-none"
           >
             <img
-              src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
+              src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Braham-Logo.png"
               alt="BRAHAM - A Findar Company"
               className="h-8 sm:h-9 w-auto max-h-9 object-contain transition-transform duration-300 group-hover:scale-[1.02]"
               referrerPolicy="no-referrer"

@@ -97,7 +97,7 @@ export const ClientExperienceSection: React.FC<ClientExperienceSectionProps> = (
           {/* Column 1: Striking Editorial Portrait Photo */}
           <div className="bento-col lg:col-span-4 rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-200 min-h-[380px] lg:min-h-full border border-black/[0.08] relative group shadow-sm">
             <img
-              src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/u783.webp"
+              src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/chatgpt.webp"
               alt="Editorial Portrait"
               className="w-full h-full object-cover filter contrast-110 group-hover:scale-105 transition-transform duration-700"
               loading="lazy"

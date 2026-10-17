@@ -118,7 +118,7 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
                 aria-label="BRAHAM Home"
               >
                 <img
-                  src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
+                  src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Braham-Logo.png"
                   alt="BRAHAM - A Findar Company"
                   className="h-8 sm:h-9 w-auto max-h-9 object-contain"
                   referrerPolicy="no-referrer"
@@ -329,7 +329,7 @@ export const Footer: React.FC<FooterProps> = ({ onBookCallClick, onNavigate }) =
         <div className="pt-6 sm:pt-8 border-t border-white/[0.1] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-white/50">
           <div className="flex items-center gap-3 tracking-wider uppercase">
             <img
-              src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
+              src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Braham-Logo.png"
               alt="BRAHAM Logo"
               className="h-4 w-auto object-contain opacity-90"
               referrerPolicy="no-referrer"

@@ -77,7 +77,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
       category: 'Web Design & Development',
       year: '2026',
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/674.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/48324.webp',
       description:
         'An editorial web platform engineered with disciplined typography, custom interactive layouts, and responsive motion.',
       services: ['Web Design', 'Front-End Development', 'Typography System'],
@@ -90,7 +90,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
       category: 'E-Commerce',
       year: '2026',
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/65.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/2151231396.jpg',
       description:
         'A refined digital storefront designed to make exploration intuitive, product discovery effortless, and elevate brand character.',
       services: ['Storefront Design', 'Product Discovery', 'Checkout Flow'],
@@ -103,7 +103,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
       category: 'UI/UX Design',
       year: '2025',
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/90.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/2151231420.jpg',
       description:
         'A thoughtful digital interface structured around clarity, effortless navigation, and visual restraint.',
       services: ['Interface Design', 'User Flows', 'Design Systems'],
@@ -116,7 +116,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
       category: 'Creative Direction & Motion',
       year: '2025',
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/66.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/6.jpg',
       description:
         'A digital brand flagship combining visual art direction, typography systems, and purposeful micro-interactions.',
       services: ['Creative Direction', 'Motion Strategy', 'Brand System'],
@@ -129,7 +129,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
       category: 'Healthcare Platform',
       year: '2026',
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/67.webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/3064.webp',
       description:
         'A warm, human-centred healthcare platform built to simplify patient discovery and elevate clinical trust.',
       services: ['Interface Design', 'Patient Flows', 'Accessibility'],
@@ -142,7 +142,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
       category: 'Corporate Web Design',
       year: '2026',
       image:
-        'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/65%20(1).webp',
+        'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/2149831320.webp',
       description:
         'A sharp, professional web presence for a global outsourcing firm — engineered for clarity, credibility, and client conversion.',
       services: ['Corporate Design', 'Lead Generation', 'Front-End Build'],
@@ -495,9 +495,9 @@ const ProjectsFAQ: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           <div className="faq-left-col lg:col-span-5 flex flex-col">
-            <div className="w-full aspect-[4/4] rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-200 mb-6 shadow-sm group">
+            <div className="w-full aspect-[4/6] rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-200 mb-6 shadow-sm group">
               <img
-                src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/and.webp"
+                src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/90.webp"
                 alt="Braham FAQ Studio Vision"
                 className="w-full h-full object-cover filter contrast-105 group-hover:scale-104 transition-transform duration-700"
                 loading="lazy"

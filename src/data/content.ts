@@ -7,7 +7,7 @@ export const SERVICES_STACK = [
     number: '01',
     title: 'Web Design',
     headline: 'Distinctive, responsive websites combining creative design with thoughtful development.',
-    image: 'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/bui.webp',
+    image: 'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/1-Instagram.jpeg',
     tags: ['Web Design', 'Responsive Layouts', 'Front-End Development', 'Performance'],
   },
   {
@@ -15,7 +15,7 @@ export const SERVICES_STACK = [
     number: '02',
     title: 'UI/UX Design',
     headline: 'Thoughtful interfaces and digital journeys designed around clarity, usability and visual character.',
-    image: 'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/fit.webp',
+    image: 'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Minimal-Fashion-iPhone-Mockup-_-WANNATHIS_ONE.jpeg',
     tags: ['Interface Design', 'User Flows', 'Wireframing', 'Design Systems'],
   },
   {
@@ -23,7 +23,7 @@ export const SERVICES_STACK = [
     number: '03',
     title: 'E-commerce',
     headline: 'Premium digital storefronts that make products easier to discover, explore and buy.',
-    image: 'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/ag.webp',
+    image: 'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/bui.webp',
     tags: ['Storefront Design', 'Product Discovery', 'Checkout Flow', 'Merchandising'],
   },
   {
@@ -31,7 +31,7 @@ export const SERVICES_STACK = [
     number: '04',
     title: 'Creative Direction',
     headline: 'Visual concepts and digital art direction that give brands and projects a recognizable creative identity.',
-    image: 'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/ai.webp',
+    image: 'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/ai.webp',
     tags: ['Visual Identity', 'Art Direction', 'Typography', 'Brand Systems'],
   },
 ];
@@ -145,7 +145,7 @@ export const CLIENT_LOGOS = [
     name: 'Daytime Healthcare',
     tagline: 'DIGITAL ARCHITECTURE',
     logoUrl:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/day.png',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/log1.webp',
   },
   {
     id: 'brand-02',
@@ -153,7 +153,7 @@ export const CLIENT_LOGOS = [
     name: 'Quality Care',
     tagline: 'Genesis Outsourcing',
     logoUrl:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/gen.png',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/5log.webp',
   },
   {
     id: 'brand-03',
@@ -161,7 +161,7 @@ export const CLIENT_LOGOS = [
     name: 'New Logo',
     tagline: 'THYRVE ACADEMY',
     logoUrl:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/mill.png',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/2log.webp',
   },
   {
     id: 'brand-04',
@@ -169,7 +169,7 @@ export const CLIENT_LOGOS = [
     name: 'Premium',
     tagline: 'PREMIUM GROUP',
     logoUrl:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/premium-removebg-preview.png',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/4log.webp',
   },
 ];
 
@@ -247,7 +247,7 @@ export const PROJECTS: Project[] = [
       'An editorial web platform engineered with disciplined typography, custom interactive layouts, and responsive motion.',
     impact: 'Distinctive digital presence with bespoke design architecture.',
     heroImage:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/674.webp',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/48324.webp',
     externalUrl: 'https://premiumgroupng.com/',
     galleryImages: [
       'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1000&auto=format&fit=crop&q=80',
@@ -272,7 +272,7 @@ export const PROJECTS: Project[] = [
       'A refined digital storefront designed to make exploration intuitive, product discovery effortless, and elevate brand character.',
     impact: 'Frictionless product discovery with premium brand aesthetics.',
     heroImage:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/65.webp',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/2151231396.jpg',
     externalUrl: 'https://www.medsurgelective.co.uk/',
     galleryImages: [
       'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&auto=format&fit=crop&q=80',
@@ -297,7 +297,7 @@ export const PROJECTS: Project[] = [
       'A thoughtful digital interface structured around clarity, effortless navigation, and visual restraint.',
     impact: 'Systematic component hierarchy and intuitive user journeys.',
     heroImage:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/90.webp',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/2151231420.jpg',
     externalUrl: 'https://daytimehomecare.com/',
     galleryImages: [
       'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1000&auto=format&fit=crop&q=80',
@@ -322,7 +322,7 @@ export const PROJECTS: Project[] = [
       'A digital brand flagship combining visual art direction, typography systems, and purposeful micro-interactions.',
     impact: 'Memorable interactive experience built to communicate brand character.',
     heroImage:
-      'https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/66.webp',
+      'https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/6.jpg',
     externalUrl: 'https://thryveacademy.co/',
     galleryImages: [
       'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1000&auto=format&fit=crop&q=80',

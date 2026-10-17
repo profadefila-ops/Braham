@@ -288,7 +288,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             preload="metadata"
           >
             <source
-              src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/New/i89.mp4"
+              src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/braham-video.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
