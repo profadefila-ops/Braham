@@ -169,7 +169,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               aria-label="BRAHAM Home"
             >
               <img
-                src="https://kyauinvtjdjkfqzwlzfa.supabase.co/storage/v1/object/public/LLO/Braham%20Logo.png"
+                src="https://lightsalmon-stinkbug-756615.hostingersite.com/wp-content/uploads/2026/10/Braham-Logo.png"
                 alt="BRAHAM - A Findar Company"
                 className="h-7 w-auto object-contain"
                 referrerPolicy="no-referrer"
